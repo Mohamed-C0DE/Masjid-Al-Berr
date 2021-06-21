@@ -1,0 +1,14 @@
+.events {
+  width: 100%;
+  height: auto;
+  margin-top: 78.78px;
+}
+.slideshow {
+  height: auto;
+  width: 100%;
+}
+.slideshow img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

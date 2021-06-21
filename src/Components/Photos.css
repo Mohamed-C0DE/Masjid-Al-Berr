@@ -1,0 +1,17 @@
+.photos {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: lightgray;
+  /* padding: 10px 0; */
+}
+.image-container {
+  padding: 10px 10px;
+}
+.images {
+  margin: 10px 0;
+}
+.images img {
+  width: 100%;
+  height: auto;
+}

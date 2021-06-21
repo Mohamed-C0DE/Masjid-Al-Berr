@@ -1,0 +1,21 @@
+.prayer-times {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: lightgray;
+  padding: 5px 0;
+}
+.prayer-table {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+.day {
+  padding-bottom: 10px;
+}
+.table-row td {
+  font-weight: bold;
+}
+td {
+  padding: 5px 0;
+}

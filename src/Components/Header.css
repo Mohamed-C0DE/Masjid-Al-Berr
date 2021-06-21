@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  background-color: lightgray;
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+.hamburger-menu {
+  font-size: 35px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.logo {
+  width: 90px;
+  margin: auto;
+  height: auto;
+  padding-top: 5px;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}

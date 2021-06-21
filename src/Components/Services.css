@@ -1,0 +1,52 @@
+.services {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: lightgray;
+  padding: 5px 0;
+}
+.services h3 {
+  padding-bottom: 5px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+.card {
+  background-color: white;
+  width: auto;
+  /* HAVE TO COME BACK TO HEIGHT WHEN CHANGING FONT SIZE FOR BIGGER SCREENS */
+  min-height: 200px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  overflow: hidden;
+}
+.card-image {
+  width: 120px;
+  margin: auto;
+}
+.card-content {
+  padding: 5px 0;
+  max-width: 290px;
+  margin: auto;
+}
+.card-link {
+  padding: 5px 0;
+  width: 120px;
+  margin: auto;
+}
+.prayer-hands-icon,
+.counselling-icon,
+.youth-icon,
+.lecture-icon {
+  font-size: 40px;
+  padding-top: 5px;
+  color: orange;
+}
+.right-arrow {
+  font-size: 10px;
+}
