@@ -87,7 +87,7 @@ const PrayerTimes = () => {
   return (
     <div className="prayer-times">
       <h3>Prayer Times</h3>
-      <h3 className="day">{date}</h3>
+      <h4 className="day">{date}</h4>
       <table className="prayer-table">
         <thead>
           <tr className="table-row">
