@@ -4,13 +4,16 @@
   text-align: center;
   padding: 10px 0px;
   text-align: center;
+  background-color: darkorange;
+  color: #ffffff;
 }
 .donate-text {
   padding: 5px 7px;
 }
 .arabic-text {
   padding: 10px 0px;
-  color: orange;
+  font-style: italic;
+  /* color: orange; */
 }
 .donate-paragraph-ref {
   padding: 10px 0px;

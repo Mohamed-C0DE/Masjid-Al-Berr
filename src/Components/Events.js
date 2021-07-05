@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-// import {
-//   FaRegCircle,
-//   FaCircle,
-//   FaArrowLeft,
-//   FaArrowRight,
-// } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import { BsCircleFill } from "react-icons/bs";
+
 import "./Events.css";
 
 const arrPics = [
@@ -20,22 +17,35 @@ const Events = () => {
   const [image, setImage] = useState(arrPics[0]);
   const [index, setIndex] = useState(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const timerId = setInterval(
-      () => setIndex((i) => (i + 1) % arrPics.length), // <-- increment index
-      3500
+      () => setIndex((prevIndex) => prevIndex + 1),
+      4000
     );
     return () => clearInterval(timerId);
   }, []);
 
-  React.useEffect(() => {
-    setImage(arrPics[index]); // <-- update media state when index updates
+  useEffect(() => {
+    if (index === arrPics.length) {
+      setIndex(0);
+    }
+    setImage(arrPics[index]);
   }, [index]);
+
+  const prevSlide = () => {
+    setIndex(index === 0 ? arrPics.length - 1 : index - 1);
+  };
+
+  const nextSlide = () => {
+    setIndex(index === arrPics.length - 1 ? 0 : index + 1);
+  };
 
   return (
     <div className="events">
       <div className="slideshow">
-        <img src={image} alt="events-slideshow" />
+        <FaArrowAltCircleLeft className="arrow-left" onClick={prevSlide} />
+        <FaArrowAltCircleRight className="arrow-right" onClick={nextSlide} />
+        <img src={image} alt="event-images" className="current-image" />
       </div>
     </div>
   );

@@ -2,11 +2,9 @@
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: lightgray;
-  padding: 5px 0;
-}
-.prayer-times h3 {
-  padding-top: 5px;
+  background-color: darkorange;
+  color: #ffffff;
+  padding: 10px 0;
 }
 .prayer-table {
   width: auto;
@@ -21,4 +19,17 @@
 }
 td {
   padding: 5px 0;
+}
+.jummah-prayer {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5px;
+}
+.download-prayer-times {
+  padding-top: 5px;
+  font-weight: bold;
+}
+.download-logo {
+  font-size: 17px;
+  vertical-align: middle;
 }

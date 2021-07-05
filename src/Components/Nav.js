@@ -1,5 +1,5 @@
 import React from "react";
-import { GrFormClose } from "react-icons/gr";
+import { GrClose } from "react-icons/gr";
 import "./Nav.css";
 
 const Nav = (props) => {
@@ -9,7 +9,7 @@ const Nav = (props) => {
 
   return (
     <div className="nav">
-      <GrFormClose className="close-modal" onClick={closeNav} />
+      <GrClose className="close-modal" onClick={closeNav} />
       <nav className="nav-bar">
         <p className="nav-links">HOME</p>
         <p className="nav-links">ABOUT</p>

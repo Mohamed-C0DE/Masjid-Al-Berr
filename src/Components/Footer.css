@@ -5,4 +5,10 @@
 .footer {
   text-align: center;
   padding: 10px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: #eeeeee;
+  color: orange;
+}
+.footer-copyright {
+  font-size: 14px;
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CgClose } from "react-icons/cg";
+import { GrClose } from "react-icons/gr";
 import "./Photos.css";
 
 const photoArr = [
@@ -32,7 +32,7 @@ const Photos = () => {
   if (showModal === true) {
     return (
       <div className="overlay" onClick={onClickHandler}>
-        <CgClose className="photo-close-btn" onClick={onClickHandler} />
+        <GrClose className="photo-close-btn" onClick={onClickHandler} />
         <div className="image-modal">
           <img src={selectedImage} alt="mosque photo enlarged" />
         </div>

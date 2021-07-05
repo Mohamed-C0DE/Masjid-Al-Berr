@@ -2,8 +2,9 @@
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: lightgray;
+  background-color: ghostwhite;
   padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 .services h3 {
   padding-bottom: 5px;
@@ -15,7 +16,7 @@
   /* flex-direction: column; */
 }
 .card {
-  background-color: white;
+  /* background-color: white; */
   width: auto;
   /* HAVE TO COME BACK TO HEIGHT WHEN CHANGING FONT SIZE FOR BIGGER SCREENS */
   min-height: 200px;
@@ -38,6 +39,7 @@
   padding: 5px 0;
   width: 120px;
   margin: auto;
+  color: orange;
 }
 .prayer-hands-icon,
 .counselling-icon,

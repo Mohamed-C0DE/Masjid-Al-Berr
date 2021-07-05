@@ -1,4 +1,6 @@
 import React from "react";
+import { BsDownload } from "react-icons/bs";
+
 import "./PrayerTimes.css";
 
 const currentTime = new Date();
@@ -124,6 +126,10 @@ const PrayerTimes = () => {
           </tr>
         </tbody>
       </table>
+      <p className="jummah-prayer">Jummah Prayers: 1:15pm, 2pm</p>
+      <p className="download-prayer-times">
+        <BsDownload className="download-logo" /> Annual Prayer Times
+      </p>
     </div>
   );
 };

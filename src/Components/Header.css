@@ -4,19 +4,22 @@
   width: 100%;
   height: auto;
   position: fixed;
+  z-index: 10;
   top: 0;
-  background-color: lightgray;
+  background-color: #ffffff;
   transition-duration: 0.5s;
   transition-property: all;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .hamburger-menu {
   font-size: 35px;
   position: absolute;
   top: 20px;
   left: 10px;
+  color: orange;
 }
 .logo {
-  width: 90px;
+  width: 80px;
   margin: auto;
   height: auto;
   padding-top: 5px;

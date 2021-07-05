@@ -2,8 +2,7 @@
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: lightgray;
-  /* padding: 10px 0; */
+  background-color: #ffffff;
 }
 .photos h3 {
   padding-top: 10px;
@@ -12,7 +11,8 @@
   padding: 10px 10px;
 }
 .images {
-  margin: 10px 0;
+  padding: 5px 0;
+  border-radius: 5px;
 }
 .images img {
   width: 100%;
@@ -25,7 +25,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 10;
+  z-index: 20;
   background-color: black;
   animation: slide-down 600ms ease-out normal;
 }
@@ -35,15 +35,19 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: black;
 }
 .image-modal img {
   width: 100%;
   height: auto;
 }
 .photo-close-btn {
-  font-size: 40px;
+  font-size: 30px;
   position: absolute;
   top: 20px;
-  right: 10px;
-  color: white;
+  right: 15px;
+  color: rgb(255, 245, 245);
+}
+.photo-close-btn path {
+  stroke: ghostwhite;
 }

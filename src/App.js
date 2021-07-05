@@ -9,7 +9,7 @@ import Donate from "./Components/Donate";
 import Photos from "./Components/Photos";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <React.Fragment>
       <Header />
@@ -22,6 +22,6 @@ function App() {
       <Footer />
     </React.Fragment>
   );
-}
+};
 
 export default App;
