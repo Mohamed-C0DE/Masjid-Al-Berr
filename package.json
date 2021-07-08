@@ -1,8 +1,8 @@
 {
-  "name": "masjid-alber",
+  "name": "AlBer-Mosque",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mohamed-c0de.github.io/",
+  "homepage": "https://mohamed-c0de.github.io/react-masjid/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
