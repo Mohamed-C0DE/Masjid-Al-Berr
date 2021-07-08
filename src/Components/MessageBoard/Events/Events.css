@@ -1,0 +1,49 @@
+.events {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.events img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.arrow-left,
+.arrow-right {
+  font-size: 40px;
+  position: absolute;
+  color: black;
+  opacity: 0.4;
+}
+.arrow-left {
+  top: 50%;
+  left: 10px;
+}
+.arrow-right {
+  top: 50%;
+  right: 10px;
+}
+
+/* @media only screen and (min-width: 600px) {
+  .events {
+    height: auto;
+    width: 600px;
+    padding-bottom: 5px;
+  }
+} */
+
+/* @media only screen and (min-width: 768px) {
+  .events {
+    height: auto;
+    width: 550px;
+  }
+} */
+
+@media only screen and (min-width: 900px) {
+  .events {
+    height: 550px;
+    width: 700px;
+  }
+}

@@ -17,7 +17,7 @@
 }
 .card {
   /* background-color: white; */
-  width: auto;
+  width: 300px;
   /* HAVE TO COME BACK TO HEIGHT WHEN CHANGING FONT SIZE FOR BIGGER SCREENS */
   min-height: 200px;
   padding: 5px;

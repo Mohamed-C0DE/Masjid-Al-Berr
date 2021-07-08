@@ -9,10 +9,16 @@
 }
 .image-container {
   padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .images {
   padding: 5px 0;
   border-radius: 5px;
+  max-width: 400px;
+  padding: 0 7px;
 }
 .images img {
   width: 100%;
@@ -50,4 +56,17 @@
 }
 .photo-close-btn path {
   stroke: ghostwhite;
+}
+
+@media only screen and (min-width: 600px) {
+  .images {
+    min-width: 250px;
+    max-width: 350px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .images {
+    min-width: 250px;
+  }
 }

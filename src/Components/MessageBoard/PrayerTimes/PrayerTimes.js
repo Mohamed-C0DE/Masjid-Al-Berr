@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BsDownload } from "react-icons/bs";
 
 import "./PrayerTimes.css";
@@ -93,43 +94,54 @@ const PrayerTimes = () => {
       <table className="prayer-table">
         <thead>
           <tr className="table-row">
-            <td>Prayer</td>
-            <td>Adthan</td>
-            <td>Iqama</td>
+            <td className="table-left">Prayer</td>
+            <td className="table-mid">Adthan</td>
+            <td className="table-right">Iqama</td>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td className="prayer-name">Fajr</td>
-            <td>{fa}</td>
-            <td>{fi}</td>
+            <td className="prayer-name ">Fajr</td>
+            <td className="table-mid">{fa}</td>
+            <td className="table-right">{fi}</td>
           </tr>
           <tr>
             <td className="prayer-name">Duhur</td>
-            <td>{da}</td>
-            <td>{di}</td>
+            <td className="table-mid">{da}</td>
+            <td className="table-right">{di}</td>
           </tr>
           <tr>
             <td className="prayer-name">Asr</td>
-            <td>{aa}</td>
-            <td>{ai}</td>
+            <td className="table-mid">{aa}</td>
+            <td className="table-right">{ai}</td>
           </tr>
           <tr>
             <td className="prayer-name">Maghrib</td>
-            <td>{ma}</td>
-            <td>{mi}</td>
+            <td className="table-mid">{ma}</td>
+            <td className="table-right">{mi}</td>
           </tr>
           <tr>
             <td className="prayer-name">Isha</td>
-            <td>{ia}</td>
-            <td>{ii}</td>
+            <td className="table-mid">{ia}</td>
+            <td className="table-right">{ii}</td>
           </tr>
         </tbody>
       </table>
       <p className="jummah-prayer">Jummah Prayers: 1:15pm, 2pm</p>
-      <p className="download-prayer-times">
-        <BsDownload className="download-logo" /> Annual Prayer Times
-      </p>
+      <Link
+        to={{
+          pathname:
+            "https://603eecf8-2270-4b2d-be72-82a4a1ff7bea.filesusr.com/ugd/486ab4_b6cc01b9ff9146beaf064aa608c2bdf4.pdf?index=true",
+        }}
+        target="_blank"
+        className="download-prayer-times"
+      >
+        <BsDownload
+          className="download-logo"
+          href="https://603eecf8-2270-4b2d-be72-82a4a1ff7bea.filesusr.com/ugd/486ab4_b6cc01b9ff9146beaf064aa608c2bdf4.pdf?index=true"
+        />{" "}
+        Annual Prayer Times
+      </Link>
     </div>
   );
 };

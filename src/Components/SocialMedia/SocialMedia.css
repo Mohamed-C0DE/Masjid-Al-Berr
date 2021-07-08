@@ -2,7 +2,7 @@
   padding: 10px 0px;
   background-color: #ffffff;
 }
-.title {
+.social-title {
   text-align: center;
   padding-bottom: 15px;
 }
@@ -17,6 +17,7 @@
 }
 .social-card {
   padding: 5px 5px;
+  min-width: 20%;
   text-align: center;
 }
 .facebook-icon {
@@ -32,7 +33,33 @@
 /* Media Queries */
 @media only screen and (min-width: 600px) {
   .card-wrapper {
+    width: 80%;
+    margin: auto;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .social-title {
+    font-size: 18px;
+  }
+  .card-wrapper {
+    font-size: 16px;
+  }
+  .social-icons {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .social-title {
+    font-size: 25px;
+  }
+  .card-wrapper {
+    font-size: 20px;
+  }
+  .social-icons {
+    font-size: 45px;
   }
 }

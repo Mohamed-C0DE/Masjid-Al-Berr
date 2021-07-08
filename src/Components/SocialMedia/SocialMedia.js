@@ -5,7 +5,7 @@ import "./SocialMedia.css";
 const SocialMedia = () => {
   return (
     <div className="socialMedia">
-      <h3 className="title">Stay Up-to-Date</h3>
+      <h3 className="social-title">Stay Up-to-Date</h3>
       <div className="card-wrapper">
         <div className="social-card">
           <FaFacebook className={`social-icons facebook-icon`} />

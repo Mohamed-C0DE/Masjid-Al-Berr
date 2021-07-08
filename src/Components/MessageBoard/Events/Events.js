@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
-import { BsCircleFill } from "react-icons/bs";
 
 import "./Events.css";
 
@@ -42,11 +41,9 @@ const Events = () => {
 
   return (
     <div className="events">
-      <div className="slideshow">
-        <FaArrowAltCircleLeft className="arrow-left" onClick={prevSlide} />
-        <FaArrowAltCircleRight className="arrow-right" onClick={nextSlide} />
-        <img src={image} alt="event-images" className="current-image" />
-      </div>
+      <FaArrowAltCircleLeft className="arrow-left" onClick={prevSlide} />
+      <FaArrowAltCircleRight className="arrow-right" onClick={nextSlide} />
+      <img src={image} alt="event-images" className="current-image" />
     </div>
   );
 };

@@ -34,7 +34,7 @@ const Photos = () => {
       <div className="overlay" onClick={onClickHandler}>
         <GrClose className="photo-close-btn" onClick={onClickHandler} />
         <div className="image-modal">
-          <img src={selectedImage} alt="mosque photo enlarged" />
+          <img src={selectedImage} alt="Interior and Exterior of Mosque" />
         </div>
       </div>
     );

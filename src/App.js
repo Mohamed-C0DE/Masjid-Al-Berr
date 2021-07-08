@@ -1,25 +1,17 @@
 import React from "react";
-import Header from "./Components/Header";
-import Events from "./Components/Events";
-import SocialMedia from "./Components/SocialMedia";
-import Footer from "./Components/Footer";
-import PrayerTimes from "./Components/PrayerTimes";
-import Services from "./Components/Services";
-import Donate from "./Components/Donate";
-import Photos from "./Components/Photos";
+import { Route, Redirect } from "react-router-dom";
+import Home from "./Pages/Home";
 import "./App.css";
 
 const App = () => {
   return (
     <React.Fragment>
-      <Header />
-      <Events />
-      <PrayerTimes />
-      <SocialMedia />
-      <Services />
-      <Donate />
-      <Photos />
-      <Footer />
+      <Route path="/" exact>
+        <Home />
+      </Route>
+      <Route path="/home">
+        <Redirect to="/" />
+      </Route>
     </React.Fragment>
   );
 };

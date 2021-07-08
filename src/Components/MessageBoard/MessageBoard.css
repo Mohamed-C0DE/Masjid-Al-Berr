@@ -1,0 +1,45 @@
+.message-board {
+  background-color: darkorange;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+.message-board-container {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 106px;
+  padding-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media only screen and (min-width: 600px) {
+  .message-board-container {
+    /* display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: auto auto;
+    column-gap: 5px; */
+    flex-direction: row;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .message-board-container {
+    /* width: calc(100% - 10px); */
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .message-board-container {
+    width: 80%;
+    margin: auto;
+  }
+}
