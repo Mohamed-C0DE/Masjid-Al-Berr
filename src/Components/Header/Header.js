@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Nav from "../Nav/Nav";
+import Nav from "./Nav/Nav";
 import { FiMenu } from "react-icons/fi";
 import "./Header.css";
 

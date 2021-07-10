@@ -9,19 +9,19 @@ const SocialMedia = () => {
       <div className="card-wrapper">
         <div className="social-card">
           <FaFacebook className={`social-icons facebook-icon`} />
-          <p>Facebook</p>
+          <p className="platform-name">Facebook</p>
         </div>
         <div className="social-card">
           <FaYoutube className={`social-icons youtube-icon`} />
-          <p>YouTube</p>
+          <p className="platform-name">YouTube</p>
         </div>
         <div className="social-card">
           <FaWhatsapp className={`social-icons whatsapp-icon`} />
-          <p>Brothers WhatsApp</p>
+          <p className="platform-name">Brothers WhatsApp</p>
         </div>
         <div className="social-card">
           <FaWhatsapp className={`social-icons whatsapp-icon`} />
-          <p>Sisters WhatsApp</p>
+          <p className="platform-name">Sisters WhatsApp</p>
         </div>
       </div>
     </div>

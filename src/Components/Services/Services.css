@@ -13,18 +13,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* flex-direction: column; */
 }
 .card {
-  /* background-color: white; */
-  width: 300px;
-  /* HAVE TO COME BACK TO HEIGHT WHEN CHANGING FONT SIZE FOR BIGGER SCREENS */
+  width: auto;
   min-height: 200px;
   padding: 5px;
   display: flex;
   flex-direction: column;
   margin: 5px;
   overflow: hidden;
+  line-height: 25px;
 }
 .card-image {
   width: 120px;
@@ -32,7 +30,7 @@
 }
 .card-content {
   padding: 5px 0;
-  max-width: 290px;
+  max-width: 270px;
   margin: auto;
 }
 .card-link {
@@ -51,4 +49,46 @@
 }
 .right-arrow {
   font-size: 10px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .cards {
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+  }
+  .services h3 {
+    font-size: 18px;
+  }
+  .card-content {
+    line-height: 28px;
+    max-height: 150px;
+  }
+  .card-link:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .services {
+    width: 80%;
+    margin: auto;
+  }
+  .services h3 {
+    font-size: 20px;
+  }
+  .cards {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 0px;
+  }
+  .prayer-hands-icon,
+  .counselling-icon,
+  .youth-icon,
+  .lecture-icon {
+    font-size: 45px;
+  }
 }

@@ -1,3 +1,6 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 .header {
   width: 100%;
   height: auto;
@@ -16,15 +19,13 @@
 .hamburger-menu {
   font-size: 35px;
   position: absolute;
-  top: 30px;
+  top: 25px;
   left: 10px;
   color: orange;
 }
 .logo {
-  width: 100px;
-  /* margin: auto; */
-  height: 96px;
-  /* padding-top: 6px; */
+  width: 90px;
+  height: 85px;
 }
 .logo img {
   width: 100%;
@@ -33,19 +34,16 @@
 
 @media only screen and (min-width: 768px) {
   .logo {
-    width: 110px;
+    width: 95px;
     height: 91px;
   }
   .header-container {
     width: 90%;
     margin: auto;
   }
-  .hamburger-menu {
-    display: none;
-  }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .header {
     height: 96px;
   }

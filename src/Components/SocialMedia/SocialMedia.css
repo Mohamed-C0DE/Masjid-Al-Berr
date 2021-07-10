@@ -29,6 +29,9 @@
 .whatsapp-icon {
   color: green;
 }
+.platform-name {
+  padding-top: 5px;
+}
 
 /* Media Queries */
 @media only screen and (min-width: 600px) {
@@ -44,22 +47,34 @@
   .social-title {
     font-size: 18px;
   }
+  .card-title {
+    font-size: 17px;
+  }
   .card-wrapper {
     font-size: 16px;
   }
   .social-icons {
     font-size: 35px;
   }
+  .social-card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
 }
 
-@media only screen and (min-width: 900px) {
-  .social-title {
-    font-size: 25px;
+@media only screen and (min-width: 1024px) {
+  .socialMedia {
+    width: 80%;
+    margin: auto;
   }
-  .card-wrapper {
+  .social-title {
     font-size: 20px;
   }
+  .card-wrapper {
+    width: 100%;
+    font-size: 16px;
+  }
   .social-icons {
-    font-size: 45px;
+    font-size: 50px;
   }
 }

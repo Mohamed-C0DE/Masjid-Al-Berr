@@ -7,11 +7,9 @@ import Donate from "../Components/Donate/Donate";
 import Photos from "../Components/Photos/Photos";
 import MessageBoard from "../Components/MessageBoard/MessageBoard";
 
-import "./Home.css";
-
 const Home = () => {
   return (
-    <div className="home">
+    <React.Fragment>
       <Header />
       <MessageBoard />
       <SocialMedia />
@@ -19,7 +17,7 @@ const Home = () => {
       <Donate />
       <Photos />
       <Footer />
-    </div>
+    </React.Fragment>
   );
 };
 

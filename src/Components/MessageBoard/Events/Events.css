@@ -26,24 +26,29 @@
   right: 10px;
 }
 
-/* @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   .events {
-    height: auto;
-    width: 600px;
-    padding-bottom: 5px;
+    width: 80%;
   }
-} */
+}
 
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .events {
-    height: auto;
-    width: 550px;
+    height: 450px;
+    width: 425px;
+    padding-bottom: 0px;
   }
-} */
+}
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
   .events {
-    height: 550px;
-    width: 700px;
+    height: 445px;
+    width: 540px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .events {
+    min-width: 600px;
   }
 }
