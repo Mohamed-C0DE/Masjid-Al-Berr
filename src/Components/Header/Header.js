@@ -14,6 +14,10 @@ const Header = () => {
     }
   };
 
+  // console.log(window.scrollY());
+
+  // document.addEventListener('scroll',
+
   return (
     <header className="header">
       <div className="header-container">

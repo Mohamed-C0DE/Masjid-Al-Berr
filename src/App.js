@@ -1,9 +1,10 @@
 import React from "react";
-import { Route, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Events from "./Pages/Events";
 import Services from "./Pages/Services";
+import Contact from "./Pages/Contact";
 import Donate from "./Pages/Donate";
 
 import "./App.css";
@@ -22,6 +23,9 @@ const App = () => {
       </Route>
       <Route exact path="/services">
         <Services />
+      </Route>
+      <Route exact path="/contact">
+        <Contact />
       </Route>
       <Route exact path="/donate">
         <Donate />

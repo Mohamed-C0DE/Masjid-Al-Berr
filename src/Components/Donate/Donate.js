@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../../UI/Button";
 import "./Donate.css";
 
@@ -22,7 +23,9 @@ const Donate = () => {
           <em>[Al-Imran 3:92]</em>
         </p>
       </div>
-      <Button>Donate Now!</Button>
+      <Link to="/donate">
+        <Button>Donate Now!</Button>
+      </Link>
     </section>
   );
 };

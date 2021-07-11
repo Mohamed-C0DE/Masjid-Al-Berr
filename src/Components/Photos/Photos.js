@@ -27,8 +27,6 @@ const Photos = () => {
     }
   };
 
-  console.log(selectedImage);
-
   if (showModal === true) {
     return (
       <div className="overlay" onClick={onClickHandler}>

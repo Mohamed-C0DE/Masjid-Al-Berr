@@ -38,6 +38,7 @@ td {
 .download-logo {
   font-size: 17px;
   vertical-align: middle;
+  padding-right: 7px;
 }
 .table-left,
 .prayer-name {
@@ -47,6 +48,7 @@ td {
   padding: 0 10px;
 }
 
+/* Media Queries */
 @media only screen and (min-width: 600px) {
   .prayer-times {
     height: 100%;

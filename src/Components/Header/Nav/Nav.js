@@ -11,6 +11,7 @@ const Nav = (props) => {
         <NavLink exact to="/" activeClassName="active" className="nav-links">
           HOME
         </NavLink>
+        <span className="border-line"></span>
         <NavLink
           exact
           to="/about"
@@ -19,6 +20,7 @@ const Nav = (props) => {
         >
           ABOUT
         </NavLink>
+        <span className="border-line"></span>
         <NavLink
           exact
           to="/events"
@@ -27,6 +29,7 @@ const Nav = (props) => {
         >
           EVENTS
         </NavLink>
+        <span className="border-line"></span>
         <NavLink
           exact
           to="/services"
@@ -35,6 +38,16 @@ const Nav = (props) => {
         >
           SERVICES
         </NavLink>
+        <span className="border-line"></span>
+        <NavLink
+          exact
+          to="/contact"
+          activeClassName="active"
+          className="nav-links"
+        >
+          CONTACT
+        </NavLink>
+        <span className="border-line"></span>
         <NavLink
           exact
           to="/donate"

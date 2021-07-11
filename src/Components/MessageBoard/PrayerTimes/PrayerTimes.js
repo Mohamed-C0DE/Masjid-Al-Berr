@@ -128,20 +128,10 @@ const PrayerTimes = () => {
         </tbody>
       </table>
       <p className="jummah-prayer">Jummah Prayers: 1:15pm, 2pm</p>
-      <Link
-        to={{
-          pathname:
-            "https://603eecf8-2270-4b2d-be72-82a4a1ff7bea.filesusr.com/ugd/486ab4_b6cc01b9ff9146beaf064aa608c2bdf4.pdf?index=true",
-        }}
-        target="_blank"
-        className="download-prayer-times"
-      >
-        <BsDownload
-          className="download-logo"
-          href="https://603eecf8-2270-4b2d-be72-82a4a1ff7bea.filesusr.com/ugd/486ab4_b6cc01b9ff9146beaf064aa608c2bdf4.pdf?index=true"
-        />{" "}
+      <a href="#" target="_blank" className="download-prayer-times">
+        <BsDownload className="download-logo" />
         Annual Prayer Times
-      </Link>
+      </a>
     </div>
   );
 };

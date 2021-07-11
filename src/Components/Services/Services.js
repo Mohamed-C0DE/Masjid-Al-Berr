@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaPrayingHands,
   FaArrowRight,
@@ -22,9 +23,9 @@ const Services = () => {
             You will be able to pray and connect with Allah in a clean, quiet,
             and blissful atmosphere. Our team is available to ensure...
           </p>
-          <p className="card-link">
+          <Link to="/services" className="card-link">
             Read More <FaArrowRight className="right-arrow" />
-          </p>
+          </Link>
         </div>
         <div className="card">
           <div className="card-image">
@@ -36,9 +37,9 @@ const Services = () => {
             positive and righteous attitude. We provide counselling for
             Marital..​
           </p>
-          <p className="card-link">
+          <Link to="/services" className="card-link">
             Read More <FaArrowRight className="right-arrow" />
-          </p>
+          </Link>
         </div>
         <div className="card">
           <div className="card-image">
@@ -49,9 +50,9 @@ const Services = () => {
             Our goals have always been to help young Muslims to develop their
             character and create a strong bond among themselves...
           </p>
-          <p className="card-link">
+          <Link to="/services" className="card-link">
             Read More <FaArrowRight className="right-arrow" />
-          </p>
+          </Link>
         </div>
         <div className="card">
           <div className="card-image">
@@ -62,9 +63,9 @@ const Services = () => {
             To help you get on the right path to become an ‘ideal Muslim’, we
             offer lectures and conferences by important speakers...
           </p>
-          <p className="card-link">
+          <Link to="/services" className="card-link">
             Read More <FaArrowRight className="right-arrow" />
-          </p>
+          </Link>
         </div>
       </div>
     </div>

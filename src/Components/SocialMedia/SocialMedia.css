@@ -47,14 +47,16 @@
   .social-title {
     font-size: 18px;
   }
-  .card-title {
-    font-size: 17px;
-  }
   .card-wrapper {
     font-size: 16px;
   }
   .social-icons {
     font-size: 35px;
+  }
+  .social-card {
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
   }
   .social-card:hover {
     transform: scale(1.1);
