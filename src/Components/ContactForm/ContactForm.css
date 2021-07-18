@@ -1,10 +1,16 @@
-.contact-form {
+.contact-form,
+.scrolled-contact-form {
   background-color: ghostwhite;
   color: black;
   width: 100%;
   height: auto;
-  margin-top: 86px;
   min-height: 100vh;
+}
+.contact-form {
+  margin-top: 86px;
+}
+.scrolled-contact-form {
+  margin-top: 0px;
 }
 .contact-form-wrapper {
   display: flex;
@@ -12,55 +18,49 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-bottom: 10px;
-}
-.form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
 }
 .form-title {
-  padding-top: 20px;
+  padding: 20px 0;
   font-size: 18px;
   text-align: center;
   color: darkorange;
-}
-.form-email {
-  padding-top: 20px;
-  font-size: 16px;
 }
 .form-content {
   text-align: center;
   padding-top: 20px;
   font-size: 16px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-.form-label,
-.form-input {
-  display: block;
-  text-align: center;
-}
-.form-label {
+.contact-email,
+.contact-address {
   font-size: 16px;
-  padding-bottom: 7px;
-  padding-top: 5px;
 }
-.form input {
-  width: 80%;
-  height: 25px;
+.contact-email {
+  padding-bottom: 5px;
 }
-.form input:last-child {
-  height: 130px;
+.color-change {
+  color: darkorange;
 }
-.form-btn {
-  margin-top: 50px;
-  font-size: 16px;
+.success-message,
+.error-message {
+  margin-top: 25px;
+  padding: 5px;
   border-radius: 10px;
-  padding: 10px;
+}
+.error-message {
+  background-color: red;
+  color: white;
+}
+.success-message {
+  background-color: green;
+  color: white;
+}
+.toggle-hidden {
+  display: none;
+}
+.toggle-show {
+  display: block;
 }
 
 /* Media Queries */
@@ -70,15 +70,16 @@
   }
   .contact-form-wrapper {
     height: auto;
+    padding-bottom: 10px;
   }
-  .form-btn,
-  .form-content,
-  .form-label,
-  .form-email {
+  .form-content {
     font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  .form input:last-child {
-    height: 150px;
+  .contact-email,
+  .contact-address {
+    font-size: 18px;
   }
   .form-title {
     padding-top: 30px;
@@ -86,18 +87,19 @@
     text-align: center;
     color: darkorange;
   }
+  .form-content {
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-  .contact-form {
-    margin-bottom: 10px;
-    margin-top: 107px;
-    margin: auto;
+  .contact-form,
+  .scrolled-contact-form {
     width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
   }
   .contact-form {
-    width: 80%;
-    margin-bottom: 10px;
     margin-top: 107px;
   }
 }

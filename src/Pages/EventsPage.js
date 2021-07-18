@@ -1,15 +1,16 @@
 import React from "react";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
+import Events from "../Components/Events/Events";
 
-const About = () => {
+const EventsPage = () => {
   return (
     <React.Fragment>
       <Header />
-      <h1>ABOUT PAGE</h1>
+      <Events />
       <Footer />
     </React.Fragment>
   );
 };
 
-export default About;
+export default EventsPage;

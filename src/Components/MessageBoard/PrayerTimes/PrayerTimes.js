@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { BsDownload } from "react-icons/bs";
 
 import "./PrayerTimes.css";
@@ -128,7 +127,7 @@ const PrayerTimes = () => {
         </tbody>
       </table>
       <p className="jummah-prayer">Jummah Prayers: 1:15pm, 2pm</p>
-      <a href="#" target="_blank" className="download-prayer-times">
+      <a href="nothing" target="_blank" className="download-prayer-times">
         <BsDownload className="download-logo" />
         Annual Prayer Times
       </a>

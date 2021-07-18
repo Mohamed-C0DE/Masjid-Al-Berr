@@ -1,0 +1,95 @@
+.services {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: ghostwhite;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.services h3 {
+  padding-bottom: 5px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: auto;
+  min-height: 200px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  overflow: hidden;
+  line-height: 25px;
+}
+.card-image {
+  width: 120px;
+  margin: auto;
+}
+.card-content {
+  padding: 5px 0;
+  max-width: 270px;
+  margin: auto;
+}
+.card-link {
+  padding: 5px 0;
+  width: 120px;
+  margin: auto;
+  color: orange;
+  text-decoration: none;
+}
+.prayer-hands-icon,
+.counselling-icon,
+.youth-icon,
+.lecture-icon {
+  font-size: 40px;
+  padding-top: 5px;
+  color: orange;
+}
+.right-arrow {
+  font-size: 10px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .cards {
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+  }
+  .services h3 {
+    font-size: 18px;
+  }
+  .card-content {
+    line-height: 28px;
+    max-height: 150px;
+  }
+  .card-link:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .services {
+    width: 80%;
+    margin: auto;
+  }
+  .services h3 {
+    font-size: 20px;
+  }
+  .cards {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 0px;
+  }
+  .prayer-hands-icon,
+  .counselling-icon,
+  .youth-icon,
+  .lecture-icon {
+    font-size: 45px;
+  }
+}

@@ -1,18 +1,18 @@
-.services-section,
-.scrolled-services-section {
+.events-section,
+.scrolled-events-section {
   background-color: ghostwhite;
   color: black;
   width: 100%;
   height: auto;
   min-height: 100vh;
 }
-.services-section {
+.events-section {
   margin-top: 86px;
 }
-.scrolled-services-section {
+.scrolled-events-section {
   margin-top: 0px;
 }
-.services-wrapper {
+.events-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,19 +22,19 @@
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
-  .services-section {
+  .events-section {
     margin-top: 92px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .services-section,
-  .scrolled-services-section {
+  .events-section,
+  .scrolled-events-section {
     width: 80%;
     margin: auto;
     margin-bottom: 10px;
   }
-  .services-section {
+  .events-section {
     margin-top: 107px;
   }
 }

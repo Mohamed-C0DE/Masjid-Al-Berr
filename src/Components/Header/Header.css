@@ -1,12 +1,22 @@
-.header {
+.header,
+.scrolled-header {
   width: 100%;
   height: auto;
-  position: fixed;
-  z-index: 20;
-  top: 0;
   background-color: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   overflow: hidden;
+}
+.header {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  transition-duration: 0.5s;
+}
+.scrolled-header {
+  position: sticky;
+  z-index: 20;
+  transition-duration: 0.5s;
+  top: 0;
 }
 .header-container {
   display: flex;
@@ -42,7 +52,8 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .header {
+  .header,
+  .scrolled-header {
     height: 96px;
   }
   .logo img {

@@ -5,7 +5,7 @@
   display: block;
 }
 .nav-bar {
-  overflow: hidden;
+  /* overflow: hidden; */
   position: fixed;
   top: 0;
   left: 0;
@@ -33,6 +33,9 @@
   color: black;
   font-size: 16px;
   padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .active {
   color: darkorange;
@@ -84,23 +87,15 @@
     font-size: 16px;
     padding: 0 15px;
   }
-  .nav-links:last-child {
+  /* .nav-links:last-child {
     padding-right: 5px;
-  }
+  } */
   .nav-links:hover {
     transform: scale(1.1);
     transition: 0.5s;
     color: orange;
   }
-  .border-line {
-    border: 0.1px solid black;
-    height: 12px;
-    margin-top: 2px;
-  }
   .close-modal {
     display: none;
-  }
-  .hidden {
-    display: block;
   }
 }

@@ -1,9 +1,15 @@
-.message-board {
+.message-board,
+.scrolled-message-board {
   background-color: darkorange;
   overflow: hidden;
   width: 100%;
   height: auto;
+}
+.message-board {
   margin-top: 85px;
+}
+.scrolled-message-board {
+  margin-top: 0px;
 }
 .message-board-container {
   overflow: hidden;
@@ -23,8 +29,11 @@
   .message-board {
     margin-top: 92px;
   }
+  .scrolled-message-board {
+    margin-top: 0px;
+  }
   .message-board-container {
-    height: 450px;
+    height: 470px;
     margin: auto;
     flex-direction: row;
     margin: auto;
@@ -32,10 +41,16 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .message-board {
+  .message-board,
+  .scrolled-message-board {
     width: 80%;
     margin: auto;
+  }
+  .message-board {
     margin-top: 107px;
+  }
+  .scrolled-message-board {
+    margin-top: 0px;
   }
   .message-board-container {
     width: 100%;

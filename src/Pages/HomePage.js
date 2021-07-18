@@ -2,23 +2,23 @@ import React from "react";
 import Header from "../Components/Header/Header";
 import SocialMedia from "../Components/SocialMedia/SocialMedia";
 import Footer from "../Components/Footer/Footer";
-import Services from "../Components/Services/Services";
-import Donate from "../Components/Donate/Donate";
+import ServicesSection from "../Components/ServicesSection/ServicesSection";
+import DonateSection from "../Components/DonateSection/DonateSection";
 import Photos from "../Components/Photos/Photos";
 import MessageBoard from "../Components/MessageBoard/MessageBoard";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <React.Fragment>
       <Header />
       <MessageBoard />
       <SocialMedia />
-      <Services />
-      <Donate />
+      <ServicesSection />
+      <DonateSection />
       <Photos />
       <Footer />
     </React.Fragment>
   );
 };
 
-export default Home;
+export default HomePage;

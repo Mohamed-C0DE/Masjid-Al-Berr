@@ -7,19 +7,19 @@ const SocialMedia = () => {
     <div className="socialMedia">
       <h3 className="social-title">Stay Up-to-Date</h3>
       <div className="card-wrapper">
-        <a href="#" target="_blank" className="social-card">
+        <a href="nothing" target="_blank" className="social-card">
           <FaFacebook className={`social-icons facebook-icon`} />
           <p className="platform-name">Facebook</p>
         </a>
-        <a href="#" className="social-card">
+        <a href="nothing" className="social-card">
           <FaYoutube className={`social-icons youtube-icon`} />
           <p className="platform-name">YouTube</p>
         </a>
-        <a href="#" className="social-card">
+        <a href="nothing" className="social-card">
           <FaWhatsapp className={`social-icons whatsapp-icon`} />
           <p className="platform-name">Brothers WhatsApp</p>
         </a>
-        <a href="#" className="social-card">
+        <a href="nothing" className="social-card">
           <FaWhatsapp className={`social-icons whatsapp-icon`} />
           <p className="platform-name">Sisters WhatsApp</p>
         </a>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import "./Donate.css";
+import "./About.css";
 
-const Donate = () => {
+const AboutSection = () => {
   const [scrolled, setScrolled] = useState(false);
 
   document.addEventListener("scroll", () => {
@@ -15,12 +15,12 @@ const Donate = () => {
   });
 
   return (
-    <div className={scrolled ? "scrolled-donate-section" : "donate-section"}>
-      <div className="donate-wrapper">
-        <h1>DONATE SECTION</h1>
+    <div className={scrolled ? "scrolled-about-section" : "about-section"}>
+      <div className="about-wrapper">
+        <h1>ABOUT SECTION</h1>
       </div>
     </div>
   );
 };
 
-export default Donate;
+export default AboutSection;

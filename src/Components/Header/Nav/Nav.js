@@ -2,16 +2,21 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { GrClose } from "react-icons/gr";
 import "./Nav.css";
+import BorderLine from "../../../UI/BorderLine";
 
 const Nav = (props) => {
+  const closeHandler = () => {
+    props.onClose(true);
+  };
+
   return (
     <div className={`nav-bar ${props.toggleNav ? "active" : "hidden"}`}>
-      <GrClose className="close-modal" onClick={props.onClickHandler} />
+      <GrClose className="close-modal" onClick={closeHandler} />
       <nav className="nav">
         <NavLink exact to="/" activeClassName="active" className="nav-links">
           HOME
         </NavLink>
-        <span className="border-line"></span>
+        <BorderLine />
         <NavLink
           exact
           to="/about"
@@ -20,7 +25,7 @@ const Nav = (props) => {
         >
           ABOUT
         </NavLink>
-        <span className="border-line"></span>
+        <BorderLine />
         <NavLink
           exact
           to="/events"
@@ -29,7 +34,7 @@ const Nav = (props) => {
         >
           EVENTS
         </NavLink>
-        <span className="border-line"></span>
+        <BorderLine />
         <NavLink
           exact
           to="/services"
@@ -38,7 +43,7 @@ const Nav = (props) => {
         >
           SERVICES
         </NavLink>
-        <span className="border-line"></span>
+        <BorderLine />
         <NavLink
           exact
           to="/contact"
@@ -47,7 +52,7 @@ const Nav = (props) => {
         >
           CONTACT
         </NavLink>
-        <span className="border-line"></span>
+        <BorderLine />
         <NavLink
           exact
           to="/donate"

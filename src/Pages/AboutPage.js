@@ -1,15 +1,16 @@
 import React from "react";
 import Header from "../Components/Header/Header";
+import About from "../Components/About/About";
 import Footer from "../Components/Footer/Footer";
 
-const Donate = () => {
+const AboutPage = () => {
   return (
     <React.Fragment>
       <Header />
-      <h1>DONATE PAGE</h1>
+      <About />
       <Footer />
     </React.Fragment>
   );
 };
 
-export default Donate;
+export default AboutPage;
