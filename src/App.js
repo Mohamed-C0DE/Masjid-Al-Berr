@@ -6,12 +6,14 @@ import EventsPage from "./Pages/EventsPage";
 import ServicesPage from "./Pages/ServicesPage";
 import ContactPage from "./Pages/ContactPage";
 import DonatePage from "./Pages/DonatePage";
+import ScrollToTop from "./Components/ScrollToTop";
 
 import "./App.css";
 
 const App = () => {
   return (
     <React.Fragment>
+      <ScrollToTop />
       <Route exact path={["/", "home"]}>
         <HomePage />
       </Route>

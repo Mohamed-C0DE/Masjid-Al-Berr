@@ -20,8 +20,7 @@
   width: 100%;
 }
 .form-title {
-  padding: 20px 0;
-  font-size: 18px;
+  padding: 10px 0;
   text-align: center;
   color: darkorange;
 }
@@ -38,6 +37,7 @@
 }
 .contact-email {
   padding-bottom: 5px;
+  padding-top: 10px;
 }
 .color-change {
   color: darkorange;
@@ -83,7 +83,6 @@
   }
   .form-title {
     padding-top: 30px;
-    font-size: 20px;
     text-align: center;
     color: darkorange;
   }

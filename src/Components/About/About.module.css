@@ -5,6 +5,7 @@
   width: 100%;
   height: auto;
   min-height: 100vh;
+  overflow: hidden;
 }
 .about-section {
   margin-top: 86px;
@@ -18,6 +19,30 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 10px 0;
+}
+.about-menu {
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+}
+.links {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.links:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.active {
+  color: orange;
+}
+.border {
+  margin: 0 7px;
+  border: 0.1px solid black;
+  padding-bottom: 1px;
 }
 
 /* Media Queries */

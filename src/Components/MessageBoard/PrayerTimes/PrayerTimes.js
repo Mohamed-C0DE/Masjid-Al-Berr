@@ -127,7 +127,7 @@ const PrayerTimes = () => {
         </tbody>
       </table>
       <p className="jummah-prayer">Jummah Prayers: 1:15pm, 2pm</p>
-      <a href="nothing" target="_blank" className="download-prayer-times">
+      <a className="download-prayer-times">
         <BsDownload className="download-logo" />
         Annual Prayer Times
       </a>

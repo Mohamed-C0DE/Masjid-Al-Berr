@@ -7,14 +7,14 @@ const BorderLine = () => {
 
   useEffect(() => {
     let windowSize = window.innerWidth;
-    if (windowSize > 1024) {
+    if (windowSize >= 1024) {
       setWidth(true);
     }
   }, []);
 
   window.addEventListener("resize", () => {
     let windowSize = window.innerWidth;
-    if (windowSize > 1024) {
+    if (windowSize >= 1024) {
       setWidth(true);
     } else {
       setWidth(false);

@@ -1,0 +1,105 @@
+.donate-section,
+.scrolled-donate-section {
+  background-color: ghostwhite;
+  color: black;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+.donate-section {
+  margin-top: 86px;
+}
+.scrolled-donate-section {
+  margin-top: 0px;
+}
+.donate-wrapper {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.donate-wrapper h2 {
+  padding: 10px 0;
+  color: darkorange;
+}
+.cards {
+  width: 80%;
+  margin: auto;
+  padding: 10px 0;
+}
+.card {
+  margin-bottom: 15px;
+}
+.cardTitle {
+  padding: 5px 0;
+  color: orange;
+  font-weight: bold;
+}
+.icon {
+  font-size: 50px;
+}
+.arabicText {
+  color: orange;
+  padding: 5px 0;
+  font-weight: bold;
+}
+.translation {
+  padding: 7px 0;
+}
+.translation-source {
+  font-size: 14px;
+  padding-top: 10px;
+  color: darkorange;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .donate-section {
+    margin-top: 92px;
+  }
+  .cards {
+    font-size: 18px;
+  }
+  .verses {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .donate-section,
+  .scrolled-donate-section {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .donate-section {
+    margin-top: 107px;
+  }
+  .donate-wrapper {
+    width: 90%;
+  }
+  .cards {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .card {
+    width: 30%;
+  }
+  .image {
+    height: 44px;
+  }
+  .cardTitle {
+    height: 25px;
+    margin: 10px 0;
+  }
+  .cardContent {
+    height: 125px;
+  }
+  .verses {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}

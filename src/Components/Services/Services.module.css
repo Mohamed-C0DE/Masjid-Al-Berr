@@ -13,17 +13,42 @@
   margin-top: 0px;
 }
 .services-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  padding: 10px 0;
+  overflow: hidden;
+  text-align: center;
+}
+.title {
+  margin-bottom: 10px;
+  color: darkorange;
+}
+.card {
+  margin: 15px 0;
+}
+.card-title {
+  padding: 7px 0;
+  color: darkorange;
+  font-weight: bold;
+}
+.icon {
+  font-size: 50px;
 }
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
   .services-section {
     margin-top: 92px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 0;
+  }
+  .card {
+    width: 40%;
   }
 }
 

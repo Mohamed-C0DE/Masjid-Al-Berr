@@ -32,16 +32,14 @@ const Header = () => {
 
   useEffect(() => {
     let windowSize = window.innerWidth;
-    console.log(windowSize);
-    if (windowSize > 1024) {
+    if (windowSize >= 1024) {
       setToggleNav(true);
     }
   }, []);
 
   window.addEventListener("resize", () => {
     let windowSize = window.innerWidth;
-    console.log(windowSize);
-    if (windowSize > 1024) {
+    if (windowSize >= 1024) {
       setToggleNav(true);
     } else {
       setToggleNav(false);
