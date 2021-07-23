@@ -78,12 +78,12 @@ const Form = (props) => {
       <label className="form-label">Subject</label>
       <input type="text" className="form-input"></input>
       <label className="form-label">Message (Required)</label>
-      <input
+      <textarea
         type="text"
         className="form-input form-message"
         onChange={messageInput}
         onBlur={validateMessageHandler}
-      ></input>
+      ></textarea>
       <input type="submit" placeholder="Submit" className="form-btn"></input>
     </form>
   );
