@@ -9,6 +9,7 @@ const MissionStatement = () => {
           <img
             className={classes.image}
             src="https://static.wixstatic.com/media/486ab4_452a46ebcdf4495eaacd2d1179ce2ea7f000.jpg/v1/fill/w_939,h_528,al_c,q_85,usm_0.33_1.00_0.00/486ab4_452a46ebcdf4495eaacd2d1179ce2ea7f000.webp"
+            alt="mosque"
           />
         </div>
         <p className={classes.missionContent}>

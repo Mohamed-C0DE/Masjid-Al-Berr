@@ -27,7 +27,10 @@ const Events = () => {
         <div className={classes.cards}>
           <div className={classes.card}>
             <div className={classes.image}>
-              <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+              <img
+                src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                alt="event-snapshot"
+              />
             </div>
             <div className={classes.content}>
               <p className={classes["content-title"]}>Event Name</p>
@@ -43,7 +46,10 @@ const Events = () => {
           </div>
           <div className={classes.card}>
             <div className={classes.image}>
-              <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+              <img
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                alt="event-snapshot"
+              />
             </div>
             <div className={classes.content}>
               <p className={classes["content-title"]}>Event Name</p>
@@ -59,7 +65,10 @@ const Events = () => {
           </div>
           <div className={classes.card}>
             <div className={classes.image}>
-              <img src="https://images.unsplash.com/photo-1522413452208-996ff3f3e740?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+              <img
+                src="https://images.unsplash.com/photo-1522413452208-996ff3f3e740?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                alt="event-snapshot"
+              />
             </div>
             <div className={classes.content}>
               <p className={classes["content-title"]}>Event Name</p>

@@ -29,7 +29,7 @@ const Form = (props) => {
   };
 
   const validateNameHandler = () => {
-    if (enteredName.trim().length > 3) {
+    if (enteredName.trim().length > 1) {
       setIsNameValid(true);
     }
   };

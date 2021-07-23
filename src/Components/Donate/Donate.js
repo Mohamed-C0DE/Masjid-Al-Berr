@@ -3,6 +3,7 @@ import { FaWalking } from "react-icons/fa";
 import { SiMailDotRu } from "react-icons/si";
 import { RiComputerLine } from "react-icons/ri";
 import classes from "./Donate.module.css";
+import { Link } from "react-router-dom";
 
 const Donate = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -58,7 +59,9 @@ const Donate = () => {
               <p className={classes.cardContent}>
                 We accept donations made online through PayPal.
                 <span>
-                  <a> Click here </a>
+                  <Link to="/donate" className={classes.link}>
+                    {""} Click here {""}
+                  </Link>
                 </span>
                 for more information.
               </p>

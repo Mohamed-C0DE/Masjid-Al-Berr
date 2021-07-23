@@ -17,10 +17,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px 0;
   width: 100%;
 }
 .form-title {
-  padding: 10px 0;
+  margin-bottom: 10px;
   text-align: center;
   color: darkorange;
 }
@@ -80,11 +81,6 @@
   .contact-email,
   .contact-address {
     font-size: 18px;
-  }
-  .form-title {
-    padding-top: 30px;
-    text-align: center;
-    color: darkorange;
   }
   .form-content {
     width: 80%;
