@@ -18,8 +18,6 @@ import "./PrayerTimes.css";
 import { Link } from "react-router-dom";
 
 const PrayerTimes = () => {
-  console.log(fa);
-
   return (
     <div className="prayer-times">
       <h3>Prayer Times</h3>

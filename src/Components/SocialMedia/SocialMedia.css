@@ -20,6 +20,8 @@
   min-width: 20%;
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 .facebook-icon {
   color: blue;
@@ -56,8 +58,6 @@
   }
   .social-card {
     font-size: 17px;
-    text-decoration: none;
-    color: black;
   }
   .social-card:hover {
     transform: scale(1.1);
