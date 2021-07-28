@@ -43,7 +43,12 @@ const Events = () => {
     <div className="events">
       <FaArrowAltCircleLeft className="arrow-left" onClick={prevSlide} />
       <FaArrowAltCircleRight className="arrow-right" onClick={nextSlide} />
-      <img src={image} alt="event-images" className="current-image" />
+      <img
+        rel="preload"
+        src={image}
+        alt="event-images"
+        className="current-image"
+      />
     </div>
   );
 };
