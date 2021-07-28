@@ -42,76 +42,28 @@ const Photos = () => {
         <h3>Photos</h3>
         <div className="image-container">
           <div className="images image-1" onClick={onClickHandler}>
-            <img
-              loading="lazy"
-              src={photoArr[0]}
-              width="640"
-              height="360"
-              alt="masjid-photos"
-            />
+            <img loading="lazy" src={photoArr[0]} alt="masjid-photos" />
           </div>
           <div className="images image-2" onClick={onClickHandler}>
-            <img
-              loading="lazy"
-              src={photoArr[1]}
-              width="640"
-              height="360"
-              alt="masjid-photos"
-            />
+            <img loading="lazy" src={photoArr[1]} alt="masjid-photos" />
           </div>
           <div className="images image-3" onClick={onClickHandler}>
-            <img
-              loading="lazy"
-              src={photoArr[2]}
-              width="640"
-              height="360"
-              alt="masjid-photos"
-            />
+            <img loading="lazy" src={photoArr[2]} alt="masjid-photos" />
           </div>
           <div className="images image-4" onClick={onClickHandler}>
-            <img
-              loading="lazy"
-              src={photoArr[3]}
-              width="640"
-              height="360"
-              alt="masjid-photos"
-            />
+            <img loading="lazy" src={photoArr[3]} alt="masjid-photos" />
           </div>
           <div className="images image-5" onClick={onClickHandler}>
-            <img
-              loading="lazy"
-              src={photoArr[4]}
-              width="640"
-              height="360"
-              alt="masjid-photos"
-            />
+            <img loading="lazy" src={photoArr[4]} alt="masjid-photos" />
           </div>
           <div className="images image-6" onClick={onClickHandler}>
-            <img
-              loading="lazy"
-              src={photoArr[5]}
-              width="640"
-              height="360"
-              alt="masjid-photos"
-            />
+            <img loading="lazy" src={photoArr[5]} alt="masjid-photos" />
           </div>
           <div className="images image-7" onClick={onClickHandler}>
-            <img
-              loading="lazy"
-              src={photoArr[6]}
-              width="640"
-              height="360"
-              alt="masjid-photos"
-            />
+            <img loading="lazy" src={photoArr[6]} alt="masjid-photos" />
           </div>
           <div className="images image-8" onClick={onClickHandler}>
-            <img
-              loading="lazy"
-              src={photoArr[7]}
-              width="640"
-              height="360"
-              alt="masjid-photos"
-            />
+            <img loading="lazy" src={photoArr[7]} alt="masjid-photos" />
           </div>
         </div>
       </section>
