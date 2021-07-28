@@ -45,8 +45,8 @@ const Photos = () => {
             <img
               loading="lazy"
               src={photoArr[0]}
-              width="270px"
-              max-height="290px"
+              width="640"
+              height="360"
               alt="masjid-photos"
             />
           </div>
@@ -54,8 +54,8 @@ const Photos = () => {
             <img
               loading="lazy"
               src={photoArr[1]}
-              width="270px"
-              max-height="290px"
+              width="640"
+              height="360"
               alt="masjid-photos"
             />
           </div>
@@ -63,8 +63,8 @@ const Photos = () => {
             <img
               loading="lazy"
               src={photoArr[2]}
-              width="270px"
-              max-height="290px"
+              width="640"
+              height="360"
               alt="masjid-photos"
             />
           </div>
@@ -72,8 +72,8 @@ const Photos = () => {
             <img
               loading="lazy"
               src={photoArr[3]}
-              width="270px"
-              max-height="290px"
+              width="640"
+              height="360"
               alt="masjid-photos"
             />
           </div>
@@ -81,8 +81,8 @@ const Photos = () => {
             <img
               loading="lazy"
               src={photoArr[4]}
-              width="270px"
-              max-height="290px"
+              width="640"
+              height="360"
               alt="masjid-photos"
             />
           </div>
@@ -90,8 +90,8 @@ const Photos = () => {
             <img
               loading="lazy"
               src={photoArr[5]}
-              width="270px"
-              max-height="290px"
+              width="640"
+              height="360"
               alt="masjid-photos"
             />
           </div>
@@ -99,8 +99,8 @@ const Photos = () => {
             <img
               loading="lazy"
               src={photoArr[6]}
-              width="270px"
-              max-height="290px"
+              width="640"
+              height="360"
               alt="masjid-photos"
             />
           </div>
@@ -108,8 +108,8 @@ const Photos = () => {
             <img
               loading="lazy"
               src={photoArr[7]}
-              width="270px"
-              max-height="290px"
+              width="640"
+              height="360"
               alt="masjid-photos"
             />
           </div>

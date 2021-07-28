@@ -8,7 +8,6 @@
   padding-top: 10px;
 }
 .image-container {
-  overflow: hidden;
   padding: 10px 10px;
   display: flex;
   align-items: center;
@@ -17,6 +16,10 @@
 }
 .images {
   padding: 5px 5px;
+}
+.images img {
+  width: 100%;
+  height: auto;
 }
 .overlay {
   overflow: hidden;
