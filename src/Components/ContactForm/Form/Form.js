@@ -11,21 +11,21 @@ const Form = (props) => {
   const [enteredMessage, setEnteredMessage] = useState("");
 
   const nameInput = (e) => {
-    if (e.target.value) {
+    setTimeout(() => {
       setEnteredName(e.target.value);
-    }
+    }, 500);
   };
 
   const emailInput = (e) => {
-    if (e.target.value) {
+    setTimeout(() => {
       setEnteredEmail(e.target.value);
-    }
+    }, 500);
   };
 
   const messageInput = (e) => {
-    if (e.target.value) {
+    setTimeout(() => {
       setEnteredMessage(e.target.value);
-    }
+    }, 500);
   };
 
   const validateNameHandler = () => {
@@ -48,15 +48,21 @@ const Form = (props) => {
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    if (
-      isEmailValid === true &&
-      isNameValid === true &&
-      isMessageValid === true
-    ) {
-      props.onSubmittedForm(true);
-    } else {
-      props.onSubmittedForm(false);
+    // Get form data and store into obj
+    let userData;
+    if (isEmailValid && isNameValid && isMessageValid) {
+      userData = {
+        name: enteredName,
+        email: enteredEmail,
+        message: enteredMessage,
+      };
     }
+    // Send obj to parent
+    props.onSubmittedForm(userData);
+    // Clear input fields
+    setEnteredName("");
+    setEnteredEmail("");
+    setEnteredMessage("");
   };
 
   return (

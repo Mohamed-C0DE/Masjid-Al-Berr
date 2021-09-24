@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Form from "./Form/Form";
-
+import firebaseDb from "../../firebase";
+import { collection, addDoc } from "firebase/firestore";
 import "./ContactForm.css";
 
 const ContactForm = () => {
@@ -8,15 +9,9 @@ const ContactForm = () => {
   const [scrolled, setScrolled] = useState(false);
   const [toggle, setToggle] = useState(false);
 
-  const submittedFormHandler = (value) => {
-    console.log(value);
-    if (value === true) {
-      setSubmittedMessage(true);
-      setToggle(true);
-    } else {
-      setSubmittedMessage(false);
-      setToggle(true);
-    }
+  const submittedFormHandler = (data) => {
+    // Get data from form and submit to database
+    addDoc(collection(firebaseDb, "contactForm"), data);
   };
 
   document.addEventListener("scroll", () => {

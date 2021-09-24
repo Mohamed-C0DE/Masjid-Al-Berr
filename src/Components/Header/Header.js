@@ -36,6 +36,7 @@ const Header = () => {
     if (windowSize >= 1024) {
       setToggleNav(true);
     }
+    return () => {};
   }, []);
 
   window.addEventListener("resize", () => {
@@ -53,8 +54,11 @@ const Header = () => {
         <FiMenu className="hamburger-menu" onClick={onClickHandler} />
         <Link to="/" className="logo">
           <img
+            rel="preload"
             src="https://static.wixstatic.com/media/486ab4_981405625f38479d850ef43b2344b730~mv2.png/v1/fill/w_134,h_134,al_c,q_85,usm_0.66_1.00_0.01/Masjid%20Al%20Birr%202%20-%20Copy.webp"
             alt="logo"
+            width="90px"
+            height="90px"
           />
         </Link>
         <Nav toggleNav={toggleNav} onClose={onCloseHandler} />

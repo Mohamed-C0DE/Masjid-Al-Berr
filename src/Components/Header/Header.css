@@ -35,13 +35,13 @@
   height: 85px;
 }
 .logo img {
-  width: 85px;
-  height: 85px;
+  width: 100%;
+  height: auto;
 }
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
-  .logo img {
+  .logo {
     width: 95px;
     height: 91px;
   }
