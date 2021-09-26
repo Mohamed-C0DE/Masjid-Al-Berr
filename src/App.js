@@ -14,7 +14,7 @@ const App = () => {
   return (
     <React.Fragment>
       <ScrollToTop />
-      <Route exact path={["/", "home"]}>
+      <Route exact path="/">
         <HomePage />
       </Route>
       <Route exact path="/about">

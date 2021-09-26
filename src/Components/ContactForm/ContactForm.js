@@ -5,9 +5,9 @@ import { collection, addDoc } from "firebase/firestore";
 import "./ContactForm.css";
 
 const ContactForm = () => {
-  const [submittedMessage, setSubmittedMessage] = useState();
+  // const [submittedMessage, setSubmittedMessage] = useState();
   const [scrolled, setScrolled] = useState(false);
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
 
   const submittedFormHandler = (data) => {
     // Get data from form and submit to database
@@ -38,23 +38,6 @@ const ContactForm = () => {
           If you have any questions or inquiries fill in the form below. We will
           get back to you as soon as we can.
         </p>
-        {submittedMessage ? (
-          <p
-            className={`success-message + ${
-              toggle ? "toggle-show" : "toggle-hidden"
-            }`}
-          >
-            Form sent!
-          </p>
-        ) : (
-          <p
-            className={`error-message + ${
-              toggle ? "toggle-show" : "toggle-hidden"
-            }`}
-          >
-            Please fill in the required fields correctly!
-          </p>
-        )}
         <Form onSubmittedForm={submittedFormHandler} />
       </div>
     </div>

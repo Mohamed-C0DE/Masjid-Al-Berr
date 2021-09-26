@@ -9,23 +9,19 @@ const Form = (props) => {
   const [enteredName, setEnteredName] = useState("");
   const [isMessageValid, setIsMessageValid] = useState("");
   const [enteredMessage, setEnteredMessage] = useState("");
+  const [submittedMessage, setSubmittedMessage] = useState();
+  const [toggle, setToggle] = useState(false);
 
   const nameInput = (e) => {
-    setTimeout(() => {
-      setEnteredName(e.target.value);
-    }, 500);
+    setEnteredName(e.target.value);
   };
 
   const emailInput = (e) => {
-    setTimeout(() => {
-      setEnteredEmail(e.target.value);
-    }, 500);
+    setEnteredEmail(e.target.value);
   };
 
   const messageInput = (e) => {
-    setTimeout(() => {
-      setEnteredMessage(e.target.value);
-    }, 500);
+    setEnteredMessage(e.target.value);
   };
 
   const validateNameHandler = () => {
@@ -41,7 +37,7 @@ const Form = (props) => {
   };
 
   const validateMessageHandler = () => {
-    if (enteredMessage.trim().length > 7) {
+    if (enteredMessage.trim().length > 1) {
       setIsMessageValid(true);
     }
   };
@@ -56,23 +52,56 @@ const Form = (props) => {
         email: enteredEmail,
         message: enteredMessage,
       };
+      // Send obj to parent
+      props.onSubmittedForm(userData);
+      // Display success msg
+      setSubmittedMessage(true);
+      setToggle(true);
+      // Clear input fields
+      setTimeout(() => {
+        setEnteredName("");
+        setEnteredEmail("");
+        setEnteredMessage("");
+        setSubmittedMessage();
+        setIsNameValid("");
+        setIsEmailValid("");
+        setIsMessageValid("");
+        setToggle(false);
+      }, 2000);
+    } else {
+      // Display error msg
+      setSubmittedMessage(false);
+      setToggle(true);
     }
-    // Send obj to parent
-    props.onSubmittedForm(userData);
-    // Clear input fields
-    setEnteredName("");
-    setEnteredEmail("");
-    setEnteredMessage("");
+    console.log(enteredName, enteredEmail, enteredMessage);
   };
 
   return (
     <form className="form" onSubmit={onSubmitHandler}>
+      {submittedMessage ? (
+        <p
+          className={`success-message + ${
+            toggle ? "toggle-show" : "toggle-hidden"
+          }`}
+        >
+          Form sent!
+        </p>
+      ) : (
+        <p
+          className={`error-message + ${
+            toggle ? "toggle-show" : "toggle-hidden"
+          }`}
+        >
+          Please fill in the required fields correctly!
+        </p>
+      )}
       <label className="form-label">Name (Required)</label>
       <input
         type="text"
         className="form-input"
         onChange={nameInput}
         onBlur={validateNameHandler}
+        value={enteredName}
       ></input>
       <label className="form-label">Email (Required)</label>
       <input
@@ -80,6 +109,7 @@ const Form = (props) => {
         className="form-input"
         onChange={emailInput}
         onBlur={validateEmailHandler}
+        value={enteredEmail}
       ></input>
       <label className="form-label">Subject</label>
       <input type="text" className="form-input"></input>
@@ -89,6 +119,7 @@ const Form = (props) => {
         className="form-input form-message"
         onChange={messageInput}
         onBlur={validateMessageHandler}
+        value={enteredMessage}
       ></textarea>
       <input type="submit" placeholder="Submit" className="form-btn"></input>
     </form>
