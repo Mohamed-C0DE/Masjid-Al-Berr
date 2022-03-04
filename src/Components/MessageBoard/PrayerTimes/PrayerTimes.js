@@ -152,6 +152,7 @@ const PrayerTimes = () => {
       <a
         href="https://603eecf8-2270-4b2d-be72-82a4a1ff7bea.filesusr.com/ugd/486ab4_b6cc01b9ff9146beaf064aa608c2bdf4.pdf?index=true"
         target="_blank"
+        rel="noreferrer"
         className="download-prayer-times"
       >
         <BsDownload className="download-logo" />
